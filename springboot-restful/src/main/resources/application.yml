@@ -1,0 +1,10 @@
+swagger:
+  title: springboot restful api doc
+  description: starter for swagger 2.x
+  version: 2.0.1.RELEASE
+  contact:
+    email: 610603255@qq.com
+    name: king
+    url: www.baidu.com
+  base-package: com.wzw.springboot.restfun
+  base-path: /**
