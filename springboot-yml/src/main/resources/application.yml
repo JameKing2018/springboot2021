@@ -1,0 +1,14 @@
+environment:
+  dev:
+    url: http://dev.bar.com
+    name: Develop Setup
+  prod:
+    url: http://foo.bar.com
+    name: My Cool app
+server:
+  port: 8081
+
+book:
+  name: springboot
+  author: king
+  amount: ${random.int*100}
