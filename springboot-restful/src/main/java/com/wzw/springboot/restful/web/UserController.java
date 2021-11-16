@@ -2,7 +2,6 @@ package com.wzw.springboot.restful.web;
 
 import com.wzw.springboot.restful.domain.User;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.handler.UserRoleAuthorizationInterceptor;
 
 import java.util.*;
 
@@ -12,6 +11,7 @@ public class UserController {
     static Map<Long, User> users= Collections.synchronizedMap(new HashMap<Long, User>());
     @GetMapping("/")
     public List<User> getUserList(){
+        System.out.println("test----test----test----test----test----");
         return new ArrayList<User>(users.values());
     }
     @PostMapping("/")
