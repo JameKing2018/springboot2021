@@ -3,6 +3,7 @@ package com.wzw.springboot.restful.web;
 import com.wzw.springboot.restful.domain.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -20,7 +21,7 @@ public class UserController {
     }
     @ApiOperation("创建用户")
     @PostMapping("/")
-    public String postUser(@RequestBody User user){
+    public String postUser(@Validated @RequestBody User user){
         users.put(user.getId(),user);
         return "SUCCESS";
     }
